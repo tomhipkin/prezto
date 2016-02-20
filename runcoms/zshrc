@@ -6,8 +6,14 @@
 #
 
 # Source Prezto.
-if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+if [[ -s "${ZDOTDIR:-$HOME/dotfiles}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME/dotfiles}/.zprezto/init.zsh"
 fi
 
 # Customize to your needs...
+
+
+
+
+# Relink this file to dotfiles/zshrc
+eval "$(ln -s -f $HOME/dotfiles/zshrc .zshrc)"
